@@ -1,0 +1,71 @@
+.packageText{
+	text-align: center;
+}
+
+.packageId{
+	font-size: 1.25em;
+}
+
+.price{
+	font-size: 1.15em;
+}
+
+.stored{
+	font-size: 1.15em;
+}
+
+.postInfo{
+	font-size: 1.15em;
+}
+
+.openingHours{
+	text-align: center;
+}
+
+.postInfo{
+	border-bottom: 1px solid white;
+}
+
+.czechPostWrapper{
+	font-size: 0.75em;
+}
+
+.stored{
+	border-bottom: 1px solid white;
+}
+
+.infoTest{
+	border-bottom: 1px solid white;
+	font-size: 1.35em;
+}
+
+.emptyRow{
+	height: 20px;
+	background-color: black;
+}
+
+.MMM-CzechPost .xsmall {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.MMM-CzechPost .small {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.MMM-CzechPost .medium {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.MMM-CzechPost .large {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.MMM-CzechPost .xlarge {
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: -1px;
+}

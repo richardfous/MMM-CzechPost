@@ -1,0 +1,17 @@
+{
+
+	"LOADING": "Loading &hellip;",
+	
+	"INFO": "Czech Post tracking",
+	
+	"PACKAGE_INFO": "Information about consignment Nr. ",
+
+	"PRICE": "Price of this consignment is ",
+	
+	"STORED": "The consignment is stored until ",
+	
+	"OPENING_HOURS": "Opening hours for post office in : ",
+	
+	"CLOSED": "Closed"
+	
+}
