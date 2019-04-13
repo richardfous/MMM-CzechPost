@@ -5,13 +5,12 @@ Module.register("MMM-CzechPost",{
 		initialLoadDelay: 3000,
 		retryDelay: 3000,
 		lang: config.language,
-		packagesUrl: "",
+		packagesUrl: "https://docs.google.com/document/d/1R6AtR6AI1pJ_0a61WgX86TcG6IKCzbljdMN9A1Giv7M/edit?usp=sharing",
 		postCode: "76001",
 		showPostInfo: "all", //today, all, none
 		showPackageInfo: "all", //latest, all
 		tableClass: "small",
 		maxNumOfShownPackages: 1,
-		
 		},
 		
 		getScripts: function(){
@@ -37,8 +36,6 @@ Module.register("MMM-CzechPost",{
 			this.scheduleUpdate(this.config.initialLoadDelay);
 			this.updateTimer = null;
 		},
-		
-		
 		
 		getPackages: function(){
 			var self = this;
@@ -192,15 +189,13 @@ Module.register("MMM-CzechPost",{
 									
 								var textCell = document.createElement("td");
 								textCell.className = "packageText";
-								if(this.packagesData[y][0].states.state[x].postoffice != ""){
-									textCell.innerHTML = this.packagesData[y][0].states.state[x].text + "    " + this.packagesData[y][0].states.state[x].postoffice;
-								}else {textCell.innerHTML = this.packagesData[y][0].states.state[x].text;}
-								row.appendChild(textCell);
-								
-								if(this.packagesData[y][0].states.state[x].id === "81"){
+								Log.log(this.packagesData);
+								if(this.packagesData[y][0].states.state[x].id === "81" || this.packagesData[y][0].states.state[x].id === "91"){
 									postCode = this.packagesData[y][0].states.state[x].postcode;
 									postName = this.packagesData[y][0].states.state[x].postoffice;
-								}
+									textCell.innerHTML = this.packagesData[y][0].states.state[x].text + "---" + this.packagesData[y][0].states.state[x].postoffice;
+								}else {textCell.innerHTML = this.packagesData[y][0].states.state[x].text;}
+								row.appendChild(textCell);
 							}
 								if(postCode != ""){
 									var row = document.createElement("tr");
@@ -223,16 +218,12 @@ Module.register("MMM-CzechPost",{
 									
 								var textCell = document.createElement("td");
 								textCell.className = "packageText";
-								if(this.packagesData[y][0].states.state[single].postoffice != ""){
-									textCell.innerHTML = this.packagesData[y][0].states.state[single].text + "    " + this.packagesData[y][0].states.state[single].postoffice;
-								}else {textCell.innerHTML = this.packagesData[y][0].states.state[single].text;}
-								row.appendChild(textCell);
-								
-								
-								if(this.packagesData[y][0].states.state[single].id === "81" || this.packagesData[y][0].states.state[single].id === "91"){   //ma byt 81
+								if(this.packagesData[y][0].states.state[single].id === "81" || this.packagesData[y][0].states.state[single].id === "91"){
 									postCode = this.packagesData[y][0].states.state[single].postcode;
 									postName = this.packagesData[y][0].states.state[single].postoffice;
-								}	
+									textCell.innerHTML = this.packagesData[y][0].states.state[single].text + "---" + this.packagesData[y][0].states.state[single].postoffice;
+								}else {textCell.innerHTML = this.packagesData[y][0].states.state[single].text;}
+								row.appendChild(textCell);
 								
 								if(postCode != null){
 									var row = document.createElement("tr");
