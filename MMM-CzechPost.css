@@ -17,14 +17,11 @@
 
 .postInfo{
 	font-size: 1.15em;
+	border-bottom: 1px solid white;
 }
 
 .openingHours{
 	text-align: center;
-}
-
-.postInfo{
-	border-bottom: 1px solid white;
 }
 
 .czechPostWrapper{
