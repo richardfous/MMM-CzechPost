@@ -5,7 +5,7 @@ Module.register("MMM-CzechPost",{
 		initialLoadDelay: 3000,
 		retryDelay: 3000,
 		lang: config.language,
-		packagesUrl: "https://docs.google.com/document/d/1R6AtR6AI1pJ_0a61WgX86TcG6IKCzbljdMN9A1Giv7M/edit?usp=sharing",
+		packagesUrl: "",
 		postCode: "76001",
 		showPostInfo: "all", //today, all, none
 		showPackageInfo: "all", //latest, all
