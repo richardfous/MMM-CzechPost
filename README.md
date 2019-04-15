@@ -26,7 +26,7 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
 ## Configuration Options
 | Option  | Description |
 | ------------- | ------------- |
-| ```packagesUrl```  | Url of a shared Google Docs document. This document is used to pass tracking numbers into this module. For more info see [dependencies](#dependencies) below. <br/> **Type:**```string```<br/> **Default:**```""```<br/> This option is **NOT REQUIRED**   |
+| ```packagesUrl```  | Url of a shared Google Docs document. This document is used to insert tracking numbers into this module. For more info see [dependencies](#dependencies) below. <br/> **Type:**```string```<br/> **Default:**```""```<br/> This option is **NOT REQUIRED**   |
 | ```postCode```  | Postcode of desired Czech post office. This option works only when no ```packagesUrl``` is set.<br/> **Type:**```string```<br/> **Default:**```"76001"```<br/> This option is **REQUIRED** only when option ```packagesUrl``` is not set.  |
 | ```showPostInfo```  | Select how much information about post offices you want to see.<br/> **Type:**```string```<br/> **Default:**```all```<br/>**Possible values:** ```all```,```today```,```none```(if this option is selected without any url in ```packagesUrl``` the module will not display any information).<br/> This option is **NOT REQUIRED**.   |
 | ```showPackageInfo```  | Select how much information about inserted packages you want to see.<br/> **Type:**```string```<br/> **Default:**```all```<br/>**Possible values:** ```all```,```latest``` <br/> This option is **NOT REQUIRED**.   |
